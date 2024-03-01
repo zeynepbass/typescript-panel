@@ -42,7 +42,7 @@ const TableTwo = () => {
       id: "basic-bar"
     },
     xaxis: {
-      categories: ["Kullanıcı Ad","Posta Code"] // Başlangıçta boş olarak ayarlayın, veriler geldiğinde güncellenecek
+      categories: ["",""] // Başlangıçta boş olarak ayarlayın, veriler geldiğinde güncellenecek
     }
   });
 

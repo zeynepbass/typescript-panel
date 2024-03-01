@@ -125,7 +125,7 @@ const Table = () => {
               <div className="sm:col-span-3">
                 <label
                   htmlFor="first-name"
-                  className="block text-sm font-medium leading-6  text-white"
+                  className="block text-sm font-medium leading-6  text-gray-400 "
                 >
                   First name
                 </label>
@@ -135,7 +135,7 @@ const Table = () => {
                     name="first-name"
                     value={end.kullaniciAd}
                     id="first-name"
-                    className=" pl-1 bg-gray-800 text-gray-300 block w-full rounded-md border-0 py-1.5  shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className=" pl-1 bg-gray-800 ring-gray-500 block w-full rounded-md border-0 py-1.5  shadow-sm ring-1 ring-inset  placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -143,7 +143,7 @@ const Table = () => {
               <div className="sm:col-span-3">
                 <label
                   htmlFor="last-name"
-                  className="block text-sm font-medium leading-6  text-white"
+                  className="block text-sm font-medium leading-6  text-gray-400 "
                 >
                   Last name
                 </label>
@@ -153,7 +153,7 @@ const Table = () => {
                     name="last-name"
                     value={end?.kullaniciSoyad}
                     id="last-name"
-                    className=" pl-1 bg-gray-800 text-gray-300 block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className=" pl-1 bg-gray-800 ring-gray-500 block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset  placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -161,7 +161,7 @@ const Table = () => {
               <div className="sm:col-span-3">
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium leading-6  text-white"
+                  className="block text-sm font-medium leading-6  text-gray-400 "
                 >
                   Email address
                 </label>
@@ -171,7 +171,7 @@ const Table = () => {
                     name="email"
                     value={end?.kullaniciEmail}
                     type="email"
-                    className="  pl-1 bg-gray-800 text-gray-300 block w-full rounded-md border-0 py-1.5  shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="text-wite pl-1 bg-gray-800 ring-gray-500 block w-full rounded-md border-0 py-1.5  shadow-sm ring-1 ring-inset  placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -179,7 +179,7 @@ const Table = () => {
               <div className="sm:col-span-3 mt-2">
                 <label
                   htmlFor="country"
-                  className="block text-sm font-medium leading-6  text-white"
+                  className="block text-sm font-medium leading-6  text-gray-400 "
                 >
                   Country
                 </label>
@@ -189,7 +189,7 @@ const Table = () => {
                     name="email"
                     value={end?.yasadigiSehir}
                     type="email"
-                    className="  pl-1 bg-gray-800 text-gray-300 block w-full rounded-md border-0 py-1.5  shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="  pl-1 bg-gray-800  block w-full rounded-md border-0 py-1.5  shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -197,7 +197,7 @@ const Table = () => {
               <div className="col-span-full">
                 <label
                   htmlFor="street-address"
-                  className="block text-sm font-medium leading-6  text-white"
+                  className="block text-sm font-medium leading-6  text-gray-400 "
                 >
                   Street address
                 </label>
@@ -207,8 +207,8 @@ const Table = () => {
                     name="adress"
                     value={end?.adress}
                     className="
-                 pl-1 bg-gray-800 text-gray-300
-                block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                 pl-1 bg-gray-800 ring-gray-500
+                block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset  placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   ></textarea>
                 </div>
               </div>
@@ -216,7 +216,7 @@ const Table = () => {
               <div className="sm:col-span-3 sm:col-start-1">
                 <label
                   htmlFor="city"
-                  className="block text-sm font-medium leading-6  text-white"
+                  className="block text-sm font-medium leading-6  text-gray-400 "
                 >
                   City
                 </label>
@@ -226,7 +226,7 @@ const Table = () => {
                     name="city"
                     value={end?.city}
                     id="city"
-                    className=" pl-1 bg-gray-800 text-gray-300 block w-full rounded-md border-0 py-1.5  shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className=" pl-1 bg-gray-800 ring-gray-500 block w-full rounded-md border-0 py-1.5  shadow-sm ring-1 ring-inset  placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -234,7 +234,7 @@ const Table = () => {
               <div className="sm:col-span-3">
                 <label
                   htmlFor="region"
-                  className="block text-sm font-medium leading-6  text-white"
+                  className="block text-sm font-medium leading-6  text-gray-400 "
                 >
                   State / Province
                 </label>
@@ -244,7 +244,7 @@ const Table = () => {
                     value={end?.province}
                     name="region"
                     id="region"
-                    className="  pl-1 bg-gray-800 text-gray-300 block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="  pl-1 bg-gray-800 ring-gray-500 block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset  placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -252,7 +252,7 @@ const Table = () => {
               <div className="sm:col-span-3">
                 <label
                   htmlFor="postal-code"
-                  className="block text-sm font-medium leading-6 text-white"
+                  className="block text-sm font-medium leading-6 text-gray-400 "
                 >
                   ZIP / Postal code
                 </label>
@@ -262,14 +262,14 @@ const Table = () => {
                     name="postal-code"
                     id="postal-code"
                     value={end?.postaCode}
-                    className=" pl-1 bg-gray-800 text-gray-300 block w-full rounded-md border-0 py-1.5 text-gray-800shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className=" pl-1 bg-gray-800 ring-gray-500 block w-full rounded-md border-0 py-1.5 text-gray-800shadow-sm ring-1 ring-inset  placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
               <div className="sm:col-span-3">
                 <label
                   htmlFor="postal-code"
-                  className="block text-sm font-medium leading-6 text-white"
+                  className="block text-sm font-medium leading-6 text-gray-400 "
                 >
                   Planing Start
                 </label>
@@ -279,7 +279,7 @@ const Table = () => {
                     name="postal-code"
                     id="postal-code"
                     value= {new Date(end.createdAt).toLocaleString()}
-                    className=" pl-1 bg-gray-800 text-gray-300 block w-full rounded-md border-0 py-1.5 text-gray-800shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className=" pl-1 bg-gray-800 ring-gray-500 block w-full rounded-md border-0 py-1.5 text-gray-800shadow-sm ring-1 ring-inset  placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -299,7 +299,7 @@ const Table = () => {
       </div>
       <div className="w-full md:max-w-full overflow-auto">
       <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-800 ">
-        <thead className="text-xs text-gray-300 uppercase bg-white  dark:bg-gray-800 dark:text-gray-400 ">
+        <thead className="text-xs ring-gray-500 uppercase bg-white  dark:bg-gray-800 dark:text-gray-400 ">
           <tr>
             <th scope="col" className="px-6 py-3">
               Delete
@@ -334,37 +334,37 @@ const Table = () => {
               >
                 <input
                   type="checkbox"
-                  className={`mt-5 w-4 h-4 text-gray-300 bg-gray-100 border-gray-300 rounded focus:ring-gray-500 dark:focus:ring-gray-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500`}
+                  className={`mt-5 w-4 h-4 ring-gray-500 bg-gray-100 border-gray-800 rounded focus:ring-gray-500 dark:focus:ring-gray-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500`}
                   onChange={(e) => handleCheckboxChange(e, item._id)}
                 />
 
                 <td
                   scope="row"
-                  className="px-6 py-4 font-medium text-gray-300 whitespace-nowrap dark:text-white"
+                  className="px-6 py-4 font-medium ring-gray-500 whitespace-nowrap dark:text-white"
                 >
                   {item.kullaniciAd}
                 </td>
                 <td
                   scope="row"
-                  className="px-6 py-4 font-medium text-gray-300 whitespace-nowrap dark:text-white"
+                  className="px-6 py-4 font-medium ring-gray-500 whitespace-nowrap dark:text-white"
                 >
                   {item.kullaniciSoyad}
                 </td>
                 <td
                   scope="row"
-                  className="px-6 py-4 font-medium text-gray-300 whitespace-nowrap dark:text-white"
+                  className="px-6 py-4 font-medium ring-gray-500 whitespace-nowrap dark:text-white"
                 >
                   {item.kullaniciEmail}
                 </td>
                 <td
                   scope="row"
-                  className="px-6 py-4 font-medium text-gray-300 whitespace-nowrap dark:text-white"
+                  className="px-6 py-4 font-medium ring-gray-500 whitespace-nowrap dark:text-white"
                 >
                   {item.yasadigiSehir}
                 </td>
                 <td
                   scope="row"
-                  className="px-6 py-4 font-medium text-gray-300 whitespace-nowrap dark:text-white"
+                  className="px-6 py-4 font-medium ring-gray-500 whitespace-nowrap dark:text-white"
                 >
                   {item.planing !== null ?
                    new Date(item.planing).toLocaleString(): <h1>
@@ -372,7 +372,7 @@ const Table = () => {
                    }
                   
                 </td>
-                <td className="row px-6 py-4 font-medium text-gray-300 whitespace-nowrap dark:text-white">
+                <td className="row px-6 py-4 font-medium ring-gray-500 whitespace-nowrap dark:text-white">
                   <img
                     src="./view.png"
                     width={20}
@@ -456,7 +456,7 @@ const Table = () => {
                                         name="kullaniciAd"
                                         value={newTodo.kullaniciAd}
                                         onChange={handleInputChange}
-                                        className="pl-1 block w-full rounded-md border-0 py-1.5 text-gray shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                        className="pl-1 block w-full rounded-md border-0 py-1.5 text-gray shadow-sm ring-1 ring-inset  placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                       />
                                     </div>
                                   </div>
@@ -476,7 +476,7 @@ const Table = () => {
                                         id="last-name"
                                         autoComplete="family-name"
                                         onChange={handleInputChange}
-                                        className="pl-1 block w-full rounded-md border-0 py-1.5 text-gray-300 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                        className="pl-1 block w-full rounded-md border-0 py-1.5 ring-gray-500 shadow-sm ring-1 ring-inset  placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                       />
                                     </div>
                                   </div>
@@ -496,7 +496,7 @@ const Table = () => {
                                         onChange={handleInputChange}
                                         type="email"
                                         autoComplete="email"
-                                        className="pl-1 block w-full rounded-md border-0 py-1.5 text-gray shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                        className="pl-1 block w-full rounded-md border-0 py-1.5 text-gray shadow-sm ring-1 ring-inset  placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                       />
                                     </div>
                                   </div>
@@ -515,7 +515,7 @@ const Table = () => {
                                         value={newTodo.yasadigiSehir}
                                         onChange={handleInputChange}
                                         autoComplete="country-name"
-                                        className="pl-1 block w-full rounded-md border-0 py-1.5 text-gray shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                        className="pl-1 block w-full rounded-md border-0 py-1.5 text-gray shadow-sm ring-1 ring-inset  placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                       >
                                         <option value="United States">
                                           United States
@@ -542,7 +542,7 @@ const Table = () => {
                                   name="adress"
                                   value={newTodo.adress}
                                   onChange={handleInputChange}
-                                  className="pl-1  block w-full rounded-md border-0 py-1.5 text-gray shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                  className="pl-1  block w-full rounded-md border-0 py-1.5 text-gray shadow-sm ring-1 ring-inset  placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                 />
                               </div>
                             </div>
@@ -560,7 +560,7 @@ const Table = () => {
                                   name="city"
                                   value={newTodo.city}
                                   onChange={handleInputChange}
-                                  className=" pl-1  block w-full rounded-md border-0 py-1.5 text-gray shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                  className=" pl-1  block w-full rounded-md border-0 py-1.5 text-gray shadow-sm ring-1 ring-inset  placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                 />
                               </div>
                             </div>
@@ -578,7 +578,7 @@ const Table = () => {
                                   name="province"
                                   value={newTodo.province}
                                   onChange={handleInputChange}
-                                  className=" pl-1 block w-full rounded-md border-0 py-1.5 text-gray shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                  className=" pl-1 block w-full rounded-md border-0 py-1.5 text-gray shadow-sm ring-1 ring-inset  placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                 />
                               </div>
                             </div>
@@ -596,7 +596,7 @@ const Table = () => {
                                   name="postaCode"
                                   value={newTodo.postaCode}
                                   onChange={handleInputChange}
-                                  className=" pl-1 block w-full rounded-md border-0 py-1.5 text-gray shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                  className=" pl-1 block w-full rounded-md border-0 py-1.5 text-gray shadow-sm ring-1 ring-inset  placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                 />
                               </div>
                             </div>
@@ -611,7 +611,7 @@ const Table = () => {
                                 <DatePicker
                                   selected={newTodo.planing}
                                   onChange={handleDateChange}
-                                  className=" pl-1 block w-full  rounded-md border-0 py-1.5 text-gray shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                  className=" pl-1 block w-full  rounded-md border-0 py-1.5 text-gray shadow-sm ring-1 ring-inset  placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  
                                 />
                               </div>

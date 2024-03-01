@@ -108,13 +108,21 @@ const User = () => {
   const electronicCareGroups = veri
     .filter((item) => item.is === "Electronic Care")
     .map((item) => item.group);
+  const kullnıcı = veri
+    .filter((item) => item.is === "Electronic Care")
+    .map((item) => item.kullaniciAd);
+  const kullnıcıT = veri
+    .filter((item) => item.is === "Machine Care")
+    .map((item) => item.kullaniciAd);
   const machine = veri
     .filter((item) => item.is === "Machine Care")
     .map((item) => item.group);
   const forklif = veri
     .filter((item) => item.is === "Forklif")
     .map((item) => item.group);
-
+  const kullnıcıF = veri
+    .filter((item) => item.is === "Forklif")
+    .map((item) => item.kullaniciAd);
   return (
     <>
       <div className="container gap-3  border  border-slate-400 ">
@@ -262,101 +270,111 @@ const User = () => {
                 </div>
               </div>
             </div>
-            <div className="grid md:grid-cols-12 gap-6 overflow-y-auto max-h-[40vh]">
-  <div className="max-w-sm w-full lg:max-w-full lg:flex col-span-6">
-    <div className="bg-gray-800 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal ">
-      <div className="mb-8">
-        <p className="text-sm text-gray-600 flex items-center">
-          <svg
-            className="fill-current text-gray-500 w-3 h-3 mr-2"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-          >
-            <path d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
-          </svg>
-        </p>
-        <div className="text-gray-900 font-bold text-xl mb-2">
-          {electronicCareGroups.join(" " + ",")}
-        </div>
-        <p className="text-gray-700 text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Voluptatibus quia, nulla! Maiores et perferendis eaque,
-          exercitationem praesentium nihil.
-        </p>
-      </div>
-      <div className="flex items-center">
-        <div className="text-sm">
-          <p className="text-gray-900 leading-none">
-            Electronic Care
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div className="max-w-sm w-full lg:max-w-full lg:flex col-span-6">
-    <div className="bg-gray-800 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal max-h-[50vh]">
-      <div className="mb-8">
-        <p className="text-sm text-gray-600 flex items-center">
-          <svg
-            className="fill-current text-gray-500 w-3 h-3 mr-2"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-          >
-            <path d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
-          </svg>
-        </p>
-        <div className="text-gray-900 font-bold text-xl mb-2">
-          {machine.join(" " + ",")}
-        </div>
-        <p className="text-gray-700 text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Voluptatibus quia, nulla! Maiores et perferendis eaque,
-          exercitationem praesentium nihil.
-        </p>
-      </div>
-      <div className="flex items-center">
-        <div className="text-sm">
-          <p className="text-gray-900 leading-none">Machine Care</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div className="max-w-sm w-full lg:max-w-full lg:flex col-span-6">
-    <div className="bg-gray-800 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal max-h-[50vh]">
-      <div className="mb-8">
-        <p className="text-sm text-gray-600 flex items-center">
-          <svg
-            className="fill-current text-gray-500 w-3 h-3 mr-2"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-          >
-            <path d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
-          </svg>
-        </p>
-        <div className="text-gray-900 font-bold text-xl mb-2">
-          {forklif.length > 0 ? (
-            forklif.join(", ")
-          ) : (
-            <h1>No Data</h1>
-          )}
-        </div>
-        <p className="text-gray-700 text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Voluptatibus quia, nulla! Maiores et perferendis eaque,
-          exercitationem praesentium nihil.
-        </p>
-      </div>
-      <div className="flex items-center">
-        <div className="text-sm">
-          <p className="text-gray-900 leading-none">
-            Forklif
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
+            <div className="container overflow-y-scroll max-h-[20vh]  ">
+              <div className="grid grid-cols-2 md:grid-cols-2 gap-1">
+                <div className=" ">
+                  <div className="bg-gray-800 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal ">
+                    <div className="mb-8">
+                      <p className="text-sm text-gray-600 flex items-center">
+                        <svg
+                          className="fill-current text-gray-500 w-3 h-3 mr-2"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                        >
+                          <path d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
+                        </svg>
+                      </p>
+                      <div className="text-gray-900 font-bold text-xl mb-2">
+                        {electronicCareGroups.join(" " + ",")}
+                      </div>
+                      <p className="text-gray-700 text-base">
+                        {kullnıcı
+                          .map(
+                            (item) =>
+                              item.charAt(0).toUpperCase() + item.slice(1)
+                          )
+                          .join(", ")}
+                      </p>
+                    </div>
+                    <div className="flex items-center">
+                      <div className="text-sm">
+                        <p className="text-gray-900 leading-none">
+                          Electronic Care
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className=" ">
+                  <div className="bg-gray-800 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal max-h-[50vh]">
+                    <div className="mb-8">
+                      <p className="text-sm text-gray-600 flex items-center">
+                        <svg
+                          className="fill-current text-gray-500 w-3 h-3 mr-2"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                        >
+                          <path d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
+                        </svg>
+                      </p>
+                      <div className="text-gray-900 font-bold text-xl mb-2">
+                        {machine.join(" " + ",")}
+                      </div>
+                      <p className="text-gray-700 text-base">
+                        {kullnıcıT
+                          .map(
+                            (item) =>
+                              item.charAt(0).toUpperCase() + item.slice(1)
+                          )
+                          .join(",")}
+                      </p>
+                    </div>
+                    <div className="flex items-center">
+                      <div className="text-sm">
+                        <p className="text-gray-900 leading-none">
+                          Machine Care
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className=" ">
+                  <div className="bg-gray-800 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal max-h-[50vh]">
+                    <div className="mb-8">
+                      <p className="text-sm text-gray-600 flex items-center">
+                        <svg
+                          className="fill-current text-gray-500 w-3 h-3 mr-2"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                        >
+                          <path d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
+                        </svg>
+                      </p>
+                      <div className="text-gray-900 font-bold text-xl mb-2">
+                        {forklif.length > 0 ? (
+                          forklif.join(", ")
+                        ) : (
+                          <h1>No Data</h1>
+                        )}
+                      </div>
+                      <p className="text-gray-700 text-base">
+                        {kullnıcıF
+                          .map(
+                            (item) =>
+                              item.charAt(0).toUpperCase() + item.slice(1)
+                          )
+                          .join(",")}
+                      </p>
+                    </div>
+                    <div className="flex items-center">
+                      <div className="text-sm">
+                        <p className="text-gray-900 leading-none">Forklif</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="col-span-2">
@@ -376,8 +394,8 @@ const User = () => {
             <ul className="list-none pr-3">
               <input
                 type="text"
-                name="price"
-                id="price"
+                name="search"
+
                 value={search}
                 onChange={(e) => {
                   setSearch(e.target.value);
