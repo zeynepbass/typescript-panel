@@ -4,6 +4,7 @@ const post = new mongoose.Schema({
   kullaniciSoyad: { type: String, required: true },
   kullaniciEmail: { type: String, required: true },
   yasadigiSehir: { type: String, required: true },
+  group: { type: String},
   createdAt: {
     type: Date,
     default: new Date(),

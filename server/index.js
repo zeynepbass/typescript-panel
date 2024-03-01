@@ -3,6 +3,8 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import userRoutes from './routes/login.js';
 import post from './routes/post.js';
+import users from './routes/group.js';
+import ıtems from './routes/item.js';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 dotenv.config();
@@ -14,6 +16,8 @@ app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 
 app.use(cors());
 app.use('/user', userRoutes);
+app.use('/grup', users);
+app.use('/item', ıtems);
 app.use('/post', post);
 
 app.listen(process.env.PORT, () => {
