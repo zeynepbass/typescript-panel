@@ -15,12 +15,12 @@ const TableTwo = () => {
       setData(response.data);
       
       // Kullanıcı adları ve posta kodlarını alarak options ve series'i güncelle
-      const kullaniciAdListesi = response.data.map(item => item.kullaniciAd);
+      const kullaniciAdListesi = response.data.map(item => item.planing);
       const veri=kullaniciAdListesi.length;
-      const postaKodListesi = response.data.map(item => item.postaCode);
+      const postaKodListesi = response.data.filter(item => item.planingEnd !== null);
       const data=postaKodListesi.length;
-      const seriesData = [{ name: "postaCode", data: [data] }];
-      const serieData = [{ name: "kullaniciAd", data: [veri] }];
+      const seriesData = [{ name: "planing end", data: [data] }];
+      const serieData = [{ name: "planing start", data: [veri] }];
 
       setSeries(seriesData);
       setSerie(serieData);

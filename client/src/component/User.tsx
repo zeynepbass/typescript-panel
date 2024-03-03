@@ -109,7 +109,7 @@ const User = () => {
     .filter((item) => item.is === "Electronic Care")
     .map((item) => item.group);
   const kullnıcı = veri
-    .filter((item) => item.is === "Electronic Care")
+    .filter((item) => item.is === "Electronic Care" )
     .map((item) => item.kullaniciAd);
   const kullnıcıT = veri
     .filter((item) => item.is === "Machine Care")

@@ -10,6 +10,7 @@ export type TodoType = {
   province:string;
   postaCode: number;
   planing:Date | null;
+  planingEnd:Date | null;
   group:string;
 };
 
