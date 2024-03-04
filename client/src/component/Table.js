@@ -59,10 +59,8 @@ const Table = () => {
 
   const handleCheckboxChange = async (e: any, id: number) => {
     const isChecked = e.target.checked;
-    setCheckedItems((prevState) => ({
-      ...prevState,
-      [id]: isChecked,
-    }));
+    console.log(isChecked)
+    setCheckedItems({id: isChecked});
     if (isChecked) {
       try {
         await axios.delete(`http://localhost:9363/post/panel/${id}`);
@@ -140,7 +138,7 @@ const Table = () => {
                   <input
                     type="text"
                     name="first-name"
-                    value={end.kullaniciAd}
+                    value={end?.kullaniciAd}
                     id="first-name"
                     className=" pl-1 bg-gray-800 text-gray-300 ring-gray-500 block w-full rounded-md border-0 py-1.5  shadow-sm ring-1 ring-inset  placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
