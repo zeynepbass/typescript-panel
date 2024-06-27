@@ -24,21 +24,11 @@
   <h2>Özellikler</h2>
 
   <ul>
-    <li>Liste halinde projenin temel özellikleri buraya yazılabilir.</li>
+    <li>Crud işlemleri yapılarak search apexchart ile hareketli grafikler user kullanıcı paneli oluşturdum kedimi geliştirmek için yaptığım projede bir çok bilgi ile kendime değerler kattım .</li>
   </ul>
 
-  <h2>Kurulum</h2>
+ 
 
-  <ol>
-    <li><strong>Gereksinimler:</strong> Node.js'in yüklü olduğundan emin olun.</li>
-    <li><strong>İndirme:</strong> Repoyu klonlayın: <code>git clone https://github.com/kullanici/proje.git</code></li>
-    <li><strong>Bağımlılıklar:</strong> Proje dizinine gidin ve bağımlılıkları yükleyin: <code>npm install</code></li>
-    <li><strong>Başlatma:</strong> Uygulamayı başlatın: <code>npm start</code></li>
-  </ol>
-
-  <h2>Kullanım</h2>
-
-  <p>Uygulamanın nasıl kullanılacağı hakkında bilgi verilebilir.</p>
 
 
 
