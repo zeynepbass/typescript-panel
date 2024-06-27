@@ -1,12 +1,5 @@
 
   <h1>CUSTOMER PANEL</h1>
-
-
-
-  <h2>Başlangıç</h2>
-
-
-
   <h2>Teknolojiler</h2>
 
   <p>Proje şu teknolojileri kullanmaktadır:</p>
