@@ -33,9 +33,6 @@
 
 
 
-  <h2>Lisans</h2>
-
-  <p>Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için <code>LICENSE</code> dosyasına bakınız.</p>
 
 
 
